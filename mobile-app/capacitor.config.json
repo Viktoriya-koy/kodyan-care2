@@ -1,0 +1,8 @@
+{
+  "appId": "com.kodyancare.app",
+  "appName": "Kodyan Care",
+  "webDir": "../web",
+  "server": {
+    "androidScheme": "https"
+  }
+}
