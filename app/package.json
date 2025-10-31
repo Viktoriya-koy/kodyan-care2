@@ -1,0 +1,32 @@
+{
+  "name": "kodyan-care-app",
+  "version": "1.0.0",
+  "description": "App de escritorio de Kodyan Care - Primeros Auxilios Emocionales",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": ["salud-mental", "ansiedad", "primeros-auxilios-emocionales"],
+  "author": "Kodyan Care",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.kodyancare.app",
+    "productName": "Kodyan Care",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "**/*",
+      "../web/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "../web/resources/pulpo-logo.png"
+    }
+  }
+}
